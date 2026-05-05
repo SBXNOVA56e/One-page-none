@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Affiliate Products - EBook SBX Nova</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-book"></i>
+                <span>EBook SBX Nova</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="products.html">สินค้า</a></li>
+                <li><a href="sbx.html">เกี่ยวกับ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <p class="subtitle">สินค้าแนะนำ</p>
+        <h1 class="title">หนังสือยอดนิยม ราคาพิเศษ</h1>
+    </div> <!-- Products Grid -->
+    <div class="products-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+            <div class="product-media" onclick="openModal('modal1')">
+                <img src="หนังสือ/หนังสือมั่งคั่งทั้งชีวิต1.webp" alt="มั่งคั่งทั้งชีวิต">
+            </div>
+            <div class="product-body" style="text-align: left;">
+                <h3 style="font-weight: 800; font-size: 18px; margin-bottom: 12px; color: #111;">มั่งคั่งทั้งชีวิต
+                    (Money Mastery)</h3>
+                <p style="color: #888; font-size: 14px; margin-bottom: 20px; line-height: 1.6;">
+                    เคล็ดลับและวิธีคิดที่จะเปลี่ยนคุณให้มั่งคั่งทั้งชีวิต เหมาะสำหรับทุกคนที่อยากมีอิสรภาพทางการเงิน</p>
+                <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8Km0acbFTI', '_blank')"><i
+                        class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+            <div class="product-media" onclick="openModal('modal2')">
+                <img src="หนังสือ/สำเร็จนอกกรอบ1.webp" alt="สำเร็จนอกกรอบ">
+            </div>
+            <div class="product-body" style="text-align: left;">
+                <h3 style="font-weight: 800; font-size: 18px; margin-bottom: 12px; color: #111;">หนังสือ สำเร็จนอกกรอบ
+                </h3>
+                <p style="color: #888; font-size: 14px; margin-bottom: 20px; line-height: 1.6;">เรียนรู้วิธีคิดนอกกรอบ
+                    เพื่อก้าวสู่ความสำเร็จที่ยิ่งใหญ่กว่า ปลดล็อกศักยภาพสูงสุดของคุณ</p>
+                <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/W39GHIqOb', '_blank')"><i
+                        class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+            <div class="product-media" onclick="openModal('modal3')">
+                <img src="หนังสือ/อยากเป็นคนธรรมดา ไม่ต้องอ่าน1.jpg" alt="อยากเป็นคนธรรมดา ไม่ต้องอ่าน">
+            </div>
+            <div class="product-body" style="text-align: left;">
+                <h3 style="font-weight: 800; font-size: 18px; margin-bottom: 12px; color: #111;">อยากเป็นคนธรรมดา
+                    ไม่ต้องอ่าน
+                </h3>
+                <p style="color: #888; font-size: 14px; margin-bottom: 20px; line-height: 1.6;">
+                    หนังสือที่จะเปลี่ยนมุมมองและพาคุณก้าวออกจากกรอบเดิมๆ เพื่อเป็นคนที่ไม่ธรรมดา</p>
+                <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8Klz4EliF8', '_blank')"><i
+                        class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="book-modal" onclick="if(event.target==this)closeModal('modal1')">
+        <div class="book-modal-content">
+            <span class="book-modal-close" onclick="closeModal('modal1')">&times;</span>
+            <div class="book-modal-body">
+                <h3 style="margin-top: 0;">หนังสือ มั่งคั่งทั้งชีวิต (Money Mastery)</h3>
+                <img src="หนังสือ/หนังสือมั่งคั่งทั้งชีวิต.webp" alt="มั่งคั่งทั้งชีวิต"
+                    style="width: 100%; border-radius: 10px; margin-top: 15px;">
+                <p style="margin-top: 15px; color: #555; line-height: 1.6; font-size: 15px;">
+                    เรียนรู้เคล็ดลับและวิธีคิดที่จะเปลี่ยนคุณให้มั่งคั่งทั้งชีวิต
+                    หนังสือเล่มนี้เหมาะสำหรับทุกคนที่อยากมีอิสรภาพทางการเงิน
+                    และต้องการวางแผนการลงทุนอย่างชาญฉลาดในยุคปัจจุบัน<br><br><b>สิ่งที่น่าสนใจ:</b> เนื้อหาอ่านง่าย
+                    มีตัวอย่างประกอบชัดเจน</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="book-modal" onclick="if(event.target==this)closeModal('modal2')">
+        <div class="book-modal-content">
+            <span class="book-modal-close" onclick="closeModal('modal2')">&times;</span>
+            <div class="book-modal-body">
+                <h3 style="margin-top: 0;">หนังสือ สำเร็จนอกกรอบ</h3>
+                <img src="หนังสือ/สำเร็จนอกกรอบ2.jpg" alt="สำเร็จนอกกรอบ"
+                    style="width: 100%; border-radius: 10px; margin-top: 15px;">
+                <p style="margin-top: 15px; color: #555; line-height: 1.6; font-size: 15px;">
+                    การคิดนอกกรอบคือหัวใจสำคัญของการสร้างสรรค์นวัตกรรม หนังสือเล่มนี้จะช่วยปลดล็อกศักยภาพสูงสุดของคุณ
+                    เพื่อก้าวสู่ความสำเร็จที่ยิ่งใหญ่กว่าเดิม<br><br><b>ข้อคิดสำคัญ:</b> การกล้าที่จะทำสิ่งที่แตกต่าง
+                    จะนำไปสู่ผลลัพธ์ที่ไม่เหมือนใคร</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="book-modal" onclick="if(event.target==this)closeModal('modal3')">
+        <div class="book-modal-content">
+            <span class="book-modal-close" onclick="closeModal('modal3')">&times;</span>
+            <div class="book-modal-body">
+                <h3 style="margin-top: 0;">หนังสือ อยากเป็นคนธรรมดา ไม่ต้องอ่าน</h3>
+                <img src="หนังสือ/อยากเป็นคนธรรมดา ไม่ต้องอ่าน.webp" alt="อยากเป็นคนธรรมดา ไม่ต้องอ่าน"
+                    style="width: 100%; border-radius: 10px; margin-top: 15px;">
+                <p style="margin-top: 15px; color: #555; line-height: 1.6; font-size: 15px;">
+                    เรียนรู้วิธีการก้าวข้ามขีดจำกัดของตัวเอง หากคุณไม่อยากหยุดอยู่แค่ความธรรมดา
+                    หนังสือเล่มนี้จะช่วยเปิดมุมมองใหม่ๆ ให้คุณกล้าคิดและกล้าลงมือทำ<br><br><b>สิ่งที่น่าสนใจ:</b>
+                    เนื้อหาสร้างแรงบันดาลใจได้ดีมาก เหมาะกับคนรุ่นใหม่</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore background scrolling
+
+                // Pause video when modal is closed
+                var video = modal.querySelector('video');
+                if (video) {
+                    video.pause();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

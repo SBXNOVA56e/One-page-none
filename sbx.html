@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับ - EBook SBX Nova</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            color: #333;
+            line-height: 1.8;
+            font-family: 'Inter', 'Prompt', sans-serif;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-logo {
+            max-width: 160px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border: 5px solid #fff;
+        }
+
+        .about-header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #1877F2;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+            margin-top: 15px;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(24, 119, 242, 0.4);
+            color: white;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #fdfaf7;
+            border-radius: 16px;
+            border-left: 5px solid #ee4d2d;
+            transition: transform 0.3s ease;
+        }
+
+        .about-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .about-section h2 {
+            font-size: 22px;
+            color: #111;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 0;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+
+        .about-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-section ul li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .about-section ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-section ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #ee4d2d;
+            background: rgba(238, 77, 45, 0.1);
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px dashed #eee;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-book"></i>
+                <span>EBook SBX Nova</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="products.html">สินค้า</a></li>
+                <li><a href="sbx.html" class="active">เกี่ยวกับ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="about-container">
+        <div class="about-header">
+            <img src="โลโก้.png" alt="โลโก้" class="about-logo">
+            <h1>อ่านวันละนิด ชีวิตเปลี่ยน</h1>
+            <a href="https://web.facebook.com/profile.php?id=61557099775833" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i> ติดตามเราบน Facebook
+            </a>
+        </div>
+
+        <div class="about-section" style="border-left-color: #4CAF50;">
+            <h2><i class="fas fa-user-graduate" style="color: #4CAF50;"></i> จุดเริ่มต้น</h2>
+            <p>
+                ผมเป็นนักเรียนที่สนใจการพัฒนาตัวเองและการเงิน
+                เริ่มจากการอ่านหนังสือ และอยากแบ่งปันสิ่งที่ได้ผลจริงให้คนอื่น
+            </p>
+        </div>
+
+        <div class="about-section" style="border-left-color: #FFC107;">
+            <h2>💡 ทำไมถึงสร้างเว็บนี้</h2>
+            <p>
+                ผมเคยเสียเงินกับหนังสือที่ไม่คุ้มหลายครั้ง
+                เลยเริ่มคัดเฉพาะเล่มที่ “ดีจริง” และอยากให้คนอื่นไม่ต้องลองผิดเหมือนผม
+            </p>
+        </div>
+
+        <div class="about-section" style="border-left-color: #2196F3;">
+            <h2>🔒 ความน่าเชื่อถือ</h2>
+            <ul>
+                <li>คัดจากรีวิวจริงใน Shopee</li>
+                <li>อ้างอิงจากยอดขายและคะแนนความพึงพอใจสูง</li>
+                <li>เน้นหนังสือที่อ่านง่ายและนำไปใช้งานได้จริง</li>
+            </ul>
+        </div>
+
+        <div class="about-section" style="border-left-color: #9C27B0;">
+            <h2>🎯 คุณจะได้อะไรจากเว็บนี้</h2>
+            <ul>
+                <li>ไม่ต้องเสียเวลาเลือกหนังสือเอง</li>
+                <li>ได้ของที่คุ้มค่าจริง</li>
+                <li>มีแนวทางพัฒนาตัวเองชัดเจน</li>
+            </ul>
+        </div>
+
+        <div class="cta-container">
+            <h2 style="font-size: 28px; color: #111; margin-bottom: 15px;">🚀 เริ่มต้นเลยวันนี้</h2>
+            <p style="color: #666; font-size: 16px; margin-bottom: 30px;">เลือกหนังสือที่เหมาะกับคุณ
+                แล้วเริ่มเปลี่ยนชีวิต</p>
+            <a href="index.html" class="btn-shopee"
+                style="display: inline-block; width: auto; padding: 15px 40px; text-decoration: none; font-size: 18px;">
+                <i class="fas fa-book-open"></i> ดูหนังสือแนะนำ
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 EBook SBX Nova. อ่านวันละนิด ชีวิตเปลี่ยน</p>
+    </div>
+</body>
+
+</html>
