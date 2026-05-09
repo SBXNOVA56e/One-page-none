@@ -32,7 +32,7 @@
         <!-- Search Box -->
         <div class="search-container">
             <input type="text" placeholder="ค้นหาชื่อหนังสือ, ผู้เขียน หรือคีย์เวิร์ด..." class="search-box">
-            <button class="search-btn"><i class="fas fa-search"></i> ค้นหา</button>
+            <button class="search-btn"><i class="fas fa-search"></i> <span>ค้นหา</span></button>
         </div>
 
         <!-- Categories -->
@@ -44,7 +44,6 @@
                 <span class="category-chip">พัฒนาตนเอง</span>
                 <span class="category-chip">ธุรกิจและการจัดการ</span>
                 <span class="category-chip">จิตวิทยา</span>
-                <span class="category-chip">นิยายแปล</span>
             </div>
         </div>
 
@@ -53,7 +52,7 @@
         <!-- All Products Grid -->
         <div class="products-grid" style="padding: 0;">
             <!-- Book 1 -->
-            <div class="product-card">
+            <div class="product-card" data-category="การเงินการลงทุน">
                 <div class="product-media" onclick="openModal('modal1')">
                     <img src="หนังสือ/หนังสือมั่งคั่งทั้งชีวิต1.webp" alt="มั่งคั่งทั้งชีวิต">
                 </div>
@@ -62,17 +61,17 @@
                     <p class="product-desc">
                         เคล็ดลับและวิธีคิดที่จะเปลี่ยนคุณให้มั่งคั่งทั้งชีวิต เหมาะสำหรับทุกคนที่อยากมีอิสรภาพทางการเงิน
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8Km0acbFTI', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่
-                        Shopee</button>
-                    <button onclick="openModal('modal1')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8Km0acbFTI', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal1')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 2 -->
-            <div class="product-card">
+            <div class="product-card" data-category="พัฒนาตนเอง">
                 <div class="product-media" onclick="openModal('modal2')">
                     <img src="หนังสือ/สำเร็จนอกกรอบ1.webp" alt="สำเร็จนอกกรอบ">
                 </div>
@@ -81,17 +80,17 @@
                     <p class="product-desc">
                         เรียนรู้วิธีคิดนอกกรอบ
                         เพื่อก้าวสู่ความสำเร็จที่ยิ่งใหญ่กว่า ปลดล็อกศักยภาพสูงสุดของคุณ</p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/W39GHIqOb', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่
-                        Shopee</button>
-                    <button onclick="openModal('modal2')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/W39GHIqOb', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal2')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 3 -->
-            <div class="product-card">
+            <div class="product-card" data-category="พัฒนาตนเอง">
                 <div class="product-media" onclick="openModal('modal3')">
                     <img src="หนังสือ/อยากเป็นคนธรรมดา ไม่ต้องอ่าน1.jpg" alt="อยากเป็นคนธรรมดา ไม่ต้องอ่าน">
                 </div>
@@ -99,16 +98,16 @@
                     <h3 class="product-title">อยากเป็นคนธรรมดา ไม่ต้องอ่าน</h3>
                     <p class="product-desc">
                         หนังสือที่จะเปลี่ยนมุมมองและพาคุณก้าวออกจากกรอบเดิมๆ เพื่อเป็นคนที่ไม่ธรรมดา</p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8Klz4EliF8', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่
-                        Shopee</button>
-                    <button onclick="openModal('modal3')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8Klz4EliF8', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal3')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
             <!-- Book 4 -->
-            <div class="product-card">
+            <div class="product-card" data-category="การเงินการลงทุน">
                 <div class="product-media" onclick="openModal('modal4')">
                     <img src="หนังสือ/หนังสือ คิดให้รวย ฉบับอัปเดต ย่อยง่าย กระชับที่สุด1.webp"
                         alt="หนังสือ คิดให้รวย ฉบับอัปเดต ย่อยง่าย กระชับที่สุด"
@@ -120,17 +119,17 @@
                         วิธีคิดทรงพลังที่จะเปลี่ยนความฝันให้กลายเป็นความมั่งคั่ง
                         เหมาะสำหรับคนที่อยากประสบความสำเร็จในชีวิต
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/40d2pgCihG', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่
-                        Shopee</button>
-                    <button onclick="openModal('modal4')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/40d2pgCihG', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal4')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 5 -->
-            <div class="product-card">
+            <div class="product-card" data-category="จิตวิทยา">
                 <div class="product-media" onclick="openModal('modal5')">
                     <img src="https://cf.shopee.co.th/file/th-11134207-7r992-lyytxtxml0vd99" alt="อย่าให้ใครใช้จิตวิทยาหลอกใช้คุณ">
                 </div>
@@ -139,16 +138,17 @@
                     <p class="product-desc">
                         ช่วยให้คุณรู้เท่าทันคนอย่างทะลุปรุโปร่ง เข้าใจความคิดคนอย่างชาญฉลาด มีเสน่ห์ในแบบของตัวเอง
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/3LNXZGjx0e', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal5')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/3LNXZGjx0e', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal5')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 6 -->
-            <div class="product-card">
+            <div class="product-card" data-category="พัฒนาตนเอง">
                 <div class="product-media" onclick="openModal('modal6')">
                     <img src="https://cf.shopee.co.th/file/th-11134207-81ztj-mhn0pczjlybo1e" alt="The Black Book of MANIFEST">
                 </div>
@@ -157,16 +157,17 @@
                     <p class="product-desc">
                         ถอดรหัสการ Manifest อย่างเป็นระบบ พร้อมเครื่องมือทรงพลังที่ผสานหลักจิตวิทยา
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/60OIkOA08f', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal6')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/60OIkOA08f', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal6')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 7 -->
-            <div class="product-card">
+            <div class="product-card" data-category="ธุรกิจและการจัดการ">
                 <div class="product-media" onclick="openModal('modal7')">
                     <img src="https://cf.shopee.co.th/file/th-11134207-7r98o-lwi09e3vhiof87" alt="หาเงินล้านง่ายๆ ด้วย TikTok Shop">
                 </div>
@@ -175,16 +176,17 @@
                     <p class="product-desc">
                         ฉบับทำได้จริง ไม่มโน เทคนิคการสร้างเงินล้านโดยที่คุณไม่จำเป็นต้องมีสินค้า
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/6L1993pNdA', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal7')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/6L1993pNdA', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal7')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 8 -->
-            <div class="product-card">
+            <div class="product-card" data-category="จิตวิทยา">
                 <div class="product-media" onclick="openModal('modal8')">
                     <img src="https://cf.shopee.co.th/file/th-11134207-81ztj-mgxhezg0gzkc49" alt="จิตวิทยาแค่ 1% ทำให้คุณ เหนือ คน">
                 </div>
@@ -193,16 +195,17 @@
                     <p class="product-desc">
                         กลยุทธ์ในการเอาชนะใจคนได้อย่างแยบยล เรียนรู้จากคนสำเร็จและรวยที่สุดในโลก
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/6VKZLP8hOM', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal8')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/6VKZLP8hOM', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal8')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 9 -->
-            <div class="product-card">
+            <div class="product-card" data-category="พัฒนาตนเอง">
                 <div class="product-media" onclick="openModal('modal9')">
                     <img src="https://cf.shopee.co.th/file/th-11134207-7r98q-lrvi5hx20ewed2" alt="Good Vibes, Good Life">
                 </div>
@@ -211,16 +214,17 @@
                     <p class="product-desc">
                         How Self-Love Is the Key to Unlocking Your Greatness. Focuses on positive and fulfilling life.
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/6fdzXkg6ui', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal9')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/6fdzXkg6ui', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal9')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 10 -->
-            <div class="product-card">
+            <div class="product-card" data-category="การเงินการลงทุน">
                 <div class="product-media" onclick="openModal('modal10')">
                     <img src="https://cf.shopee.co.th/file/sg-11134201-825ba-mgbu0vss24nece" alt="พ่อรวยสอนลงทุน">
                 </div>
@@ -229,16 +233,17 @@
                     <p class="product-desc">
                         กระบวนการพัฒนาตัวเองเพื่อให้คุณเป็นนักลงทุนที่ดีขึ้น เก่งขึ้น และทนต่อความเสี่ยง
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8KmDXCv8zw', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal10')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/8KmDXCv8zw', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal10')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 11 -->
-            <div class="product-card">
+            <div class="product-card" data-category="พัฒนาตนเอง">
                 <div class="product-media" onclick="openModal('modal11')">
                     <img src="https://cf.shopee.co.th/file/th-11134207-7qul9-lho8h1z6dc0jc2" alt="ผอมทันที สุขภาพดี 100%">
                 </div>
@@ -247,16 +252,17 @@
                     <p class="product-desc">
                         รื้อถอนความเข้าใจผิดแบบเดิมๆ เพื่อเปลี่ยนชีวิตคุณให้ ‘ผอม’ แบบสุขภาพดี โดยหมอแบงค์ Food Doctor
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/gMmPAeARP', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal11')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/gMmPAeARP', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal11')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 12 -->
-            <div class="product-card">
+            <div class="product-card" data-category="การเงินการลงทุน">
                 <div class="product-media" onclick="openModal('modal12')">
                     <img src="https://cf.shopee.co.th/file/sg-11134201-23020-v3eejpv955mv76" alt="The Psychology of Money">
                 </div>
@@ -265,16 +271,17 @@
                     <p class="product-desc">
                         กะเทาะเปลือกความเป็นมนุษย์ เพื่อให้เห็นว่าเมื่อเป็นเรื่องเงิน รู้อะไรไม่สำคัญเท่าทำอย่างไร
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/BQVoJ18Hp', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal12')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/BQVoJ18Hp', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal12')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 13 -->
-            <div class="product-card">
+            <div class="product-card" data-category="การเงินการลงทุน">
                 <div class="product-media" onclick="openModal('modal13')">
                     <img src="https://cf.shopee.co.th/file/023d51a41cde9dac1563fdbbb0a5750b" alt="Money Summary">
                 </div>
@@ -283,16 +290,17 @@
                     <p class="product-desc">
                         รวบรวม 40 ความรู้ทางการเงินที่ถูกต้องจาก "The Money Coach" สรุปให้เข้าใจง่ายในเล่มเดียว
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/7ppwwRhBRr', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal13')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/7ppwwRhBRr', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal13')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
 
             <!-- Book 14 -->
-            <div class="product-card">
+            <div class="product-card" data-category="พัฒนาตนเอง">
                 <div class="product-media" onclick="openModal('modal14')">
                     <img src="https://cf.shopee.co.th/file/th-11134207-7qul4-liwkji9gvbooa8" alt="โชคดีที่มึงได้อ่าน">
                 </div>
@@ -301,13 +309,15 @@
                     <p class="product-desc">
                         ถอดบทเรียนจากรายการ "อย่าหาว่าน้าสอน" โดย น้าเน็ก เกตุเสพย์สวัสดิ์ เพื่อความสุขในชีวิต
                     </p>
-                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/175c5ZQVL', '_blank')"
-                        style="margin-bottom: 10px;"><i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee</button>
-                    <button onclick="openModal('modal14')"
-                        style="width: 100%; background: #fff; color: #ee4d2d; border: 1px solid #ee4d2d; padding: 10px; border-radius: 50px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.3s;"><i
-                            class="fas fa-image"></i> กดเพื่อดูภาพสินค้า</button>
+                    <button class="btn-shopee" onclick="window.open('https://s.shopee.co.th/175c5ZQVL', '_blank')" style="margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> สั่งซื้อราคาพิเศษที่ Shopee
+                    </button>
+                    <button class="btn-view-image" onclick="openModal('modal14')">
+                        <i class="fas fa-image"></i> กดเพื่อดูภาพสินค้า
+                    </button>
                 </div>
             </div>
+
         </div>
 
     </section>
@@ -606,6 +616,8 @@
         </div>
     </div>
 
+    </div>
+
     <script>
         function openModal(modalId) {
             var modal = document.getElementById(modalId);
@@ -627,6 +639,45 @@
                 }
             }
         }
+
+        // Category Filtering Logic
+        const categoryChips = document.querySelectorAll('.category-chip');
+        const productCards = document.querySelectorAll('.product-card');
+        const searchInput = document.querySelector('.search-box');
+        const searchBtn = document.querySelector('.search-btn');
+
+        function filterProducts() {
+            const activeCategory = document.querySelector('.category-chip.active').textContent.trim();
+            const searchText = searchInput.value.toLowerCase().trim();
+
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const title = card.querySelector('.product-title').textContent.toLowerCase();
+                const desc = card.querySelector('.product-desc').textContent.toLowerCase();
+
+                const matchesCategory = (activeCategory === 'ทั้งหมด' || category === activeCategory);
+                const matchesSearch = (title.includes(searchText) || desc.includes(searchText));
+
+                if (matchesCategory && matchesSearch) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        categoryChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                categoryChips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                filterProducts();
+            });
+        });
+
+        searchBtn.addEventListener('click', filterProducts);
+        searchInput.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') filterProducts();
+        });
     </script>
 </body>
 
